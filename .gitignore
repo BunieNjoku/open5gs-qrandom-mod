@@ -1,9 +1,10 @@
+# Root-level ignores
 install/
+build/
 
-# This directory is fetched during first build and is present in this directory
-subprojects/freeDiameter
-subprojects/libtins
-subprojects/prometheus-client-c
-subprojects/usrsctp
-
-webui/.next
+# Ignores within the open5gs directory
+open5gs/subprojects/freeDiameter
+open5gs/subprojects/libtins
+open5gs/subprojects/prometheus-client-c
+open5gs/subprojects/usrsctp
+open5gs/webui/.next

@@ -1,0 +1,47 @@
+Open5GS daemon v2.7.2-28-gb6ddd7f
+
+08/27 17:31:17.014: [app] INFO: Configuration: '/home/bunie/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:133)
+08/27 17:31:17.014: [app] INFO: File Logging: '/home/bunie/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:136)
+08/27 17:31:17.029: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+08/27 17:31:17.135: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+08/27 17:31:17.135: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+08/27 17:31:17.135: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+08/27 17:31:17.135: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+08/27 17:31:17.135: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+08/27 17:31:17.243: [hss] FATAL: hss_fd_init: Assertion `rv == 0' failed. (../src/hss/hss-fd-path.c:41)
+08/27 17:31:17.243: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-hssd(+0x1c503) [0x64cbc0253503]
+./install/bin/open5gs-hssd(+0x7f66) [0x64cbc023ef66]
+./install/bin/open5gs-hssd(+0x747e) [0x64cbc023e47e]
+./install/bin/open5gs-hssd(+0x7d81) [0x64cbc023ed81]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x70436442a1ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x70436442a28b]
+./install/bin/open5gs-hssd(+0x73a5) [0x64cbc023e3a5]
+Open5GS daemon v2.7.2-28-gb6ddd7f+
+
+09/17 11:07:32.331: [app] INFO: Configuration: '/home/bunie/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:133)
+09/17 11:07:32.331: [app] INFO: File Logging: '/home/bunie/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:136)
+09/17 11:07:32.337: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/17 11:07:32.360: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+09/17 11:07:32.361: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+09/17 11:15:35.759: [app] INFO: SIGINT received (../src/main.c:53)
+09/17 11:15:35.759: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/17 11:15:35.874: [app] INFO: HSS terminate...done (../src/hss/app-init.c:39)
+Open5GS daemon v2.7.2-28-gb6ddd7f+
+
+09/17 11:30:44.522: [app] INFO: Configuration: '/home/bunie/open5gs/install/etc/open5gs/hss.yaml' (../lib/app/ogs-init.c:133)
+09/17 11:30:44.522: [app] INFO: File Logging: '/home/bunie/open5gs/install/var/log/open5gs/hss.log' (../lib/app/ogs-init.c:136)
+09/17 11:30:44.527: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/17 11:30:44.551: [app] INFO: HSS initialize...done (../src/hss/app-init.c:31)
+09/17 11:30:44.553: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+09/17 11:34:27.401: [app] INFO: SIGHUP received (../src/main.c:58)
+09/17 14:03:22.555: [core] ERROR: epoll failed (4:Interrupted system call) (../lib/core/ogs-epoll.c:220)
+09/17 15:18:39.371: [core] ERROR: epoll failed (4:Interrupted system call) (../lib/core/ogs-epoll.c:220)
+09/17 21:06:44.555: [core] ERROR: epoll failed (4:Interrupted system call) (../lib/core/ogs-epoll.c:220)
+09/18 12:08:37.372: [core] ERROR: epoll failed (4:Interrupted system call) (../lib/core/ogs-epoll.c:220)
+09/19 11:45:36.561: [core] ERROR: epoll failed (4:Interrupted system call) (../lib/core/ogs-epoll.c:220)

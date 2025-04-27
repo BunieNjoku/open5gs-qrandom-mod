@@ -1,0 +1,45 @@
+Open5GS daemon v2.7.2-28-gb6ddd7f
+
+08/27 17:31:17.035: [app] INFO: Configuration: '/home/bunie/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:133)
+08/27 17:31:17.035: [app] INFO: File Logging: '/home/bunie/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:136)
+08/27 17:31:17.050: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+08/27 17:31:17.172: [diam] ERROR: pid:Main in fd_sctp_create_bind_server@sctp.c:883: ERROR: in '(sctp_bindx(*sock, sar, count, 0x01))' :	Address already in use
+ ((null):0)
+08/27 17:31:17.172: [diam] ERROR: pid:Main in fd_cnx_serv_sctp@cnxctx.c:181: ERROR: in '(fd_sctp_create_bind_server( &cnx->cc_socket, cnx->cc_family, ep_list, port ))' :	Address already in use
+ ((null):0)
+08/27 17:31:17.172: [diam] ERROR: pid:Main in fd_servers_start@server.c:355: ERROR: in '(s->conn = fd_cnx_serv_sctp(fd_g_config->cnf_port, empty_conf_ep ? ((void *)0) : &fd_g_config->cnf_endpoints))' :	Transport endpoint is not connected
+ ((null):0)
+08/27 17:31:17.173: [diam] ERROR: pid:Main in fd_core_start_int@core.c:300: ERROR: in '((fd_servers_start()))' :	Transport endpoint is not connected
+ ((null):0)
+08/27 17:31:17.173: [diam] ERROR: pid:Main in ogs_diam_start@init.c:71: ERROR: in '(fd_core_start())' :	Transport endpoint is not connected
+ ((null):0)
+08/27 17:31:17.281: [pcrf] FATAL: pcrf_fd_init: Assertion `rv == 0' failed. (../src/pcrf/pcrf-fd-path.c:37)
+08/27 17:31:17.281: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+./install/bin/open5gs-pcrfd(+0x78bf) [0x5864afaf28bf]
+./install/bin/open5gs-pcrfd(+0x58fa) [0x5864afaf08fa]
+./install/bin/open5gs-pcrfd(+0x4e3e) [0x5864afaefe3e]
+./install/bin/open5gs-pcrfd(+0x5741) [0x5864afaf0741]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7c809ae2a1ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7c809ae2a28b]
+./install/bin/open5gs-pcrfd(+0x4d65) [0x5864afaefd65]
+Open5GS daemon v2.7.2-28-gb6ddd7f+
+
+09/17 11:07:43.820: [app] INFO: Configuration: '/home/bunie/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:133)
+09/17 11:07:43.820: [app] INFO: File Logging: '/home/bunie/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:136)
+09/17 11:07:43.825: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/17 11:07:43.887: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+09/17 11:07:43.889: [diam] INFO: CONNECTED TO 'smf.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+09/17 11:15:37.599: [app] INFO: SIGINT received (../src/main.c:53)
+09/17 11:15:37.599: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/17 11:15:37.713: [app] INFO: PCRF terminate...done (../src/pcrf/app-init.c:39)
+Open5GS daemon v2.7.2-28-gb6ddd7f+
+
+09/17 11:30:46.555: [app] INFO: Configuration: '/home/bunie/open5gs/install/etc/open5gs/pcrf.yaml' (../lib/app/ogs-init.c:133)
+09/17 11:30:46.555: [app] INFO: File Logging: '/home/bunie/open5gs/install/var/log/open5gs/pcrf.log' (../lib/app/ogs-init.c:136)
+09/17 11:30:46.560: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/17 11:30:46.629: [app] INFO: PCRF initialize...done (../src/pcrf/app-init.c:31)
+09/17 11:30:46.631: [diam] INFO: CONNECTED TO 'smf.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+09/17 11:34:30.958: [app] INFO: SIGHUP received (../src/main.c:58)
+09/17 11:37:59.739: [diam] INFO: CONNECTED TO 'smf.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+09/17 11:46:54.072: [diam] INFO: CONNECTED TO 'smf.localdomain' (SCTP,soc#15): (../lib/diameter/common/logger.c:108)
+09/17 12:44:11.845: [diam] INFO: CONNECTED TO 'smf.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
